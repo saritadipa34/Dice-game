@@ -6,8 +6,10 @@ const EntrytPage = () => {
       <div>
         <img src="" alt="" />
       </div>
+
 <div>
     <h1>DICE GAME</h1>
+    
 </div>
 
     </div>
