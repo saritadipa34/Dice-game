@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+    width: 70vw;
+}
+
+.entry{
+    width: 50%;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+  
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 800;
+   margin-top: 50px;
+}
+
+.h1{
+    padding: 100px 50px;
+}

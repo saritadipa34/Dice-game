@@ -1,2 +1,9 @@
 .btn{
+   height: 30px;
+   width: 100px;
+   background-color: black;
+   color: white;
+   margin: 10px;
+   margin-left: 65%;
+   cursor: pointer;
 }
