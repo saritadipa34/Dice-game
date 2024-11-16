@@ -2,8 +2,10 @@ import React from 'react'
 import styles from "./button.module.css";
 
 const Button = ({onClick,label}) => {
+const buttonClass=`${styles.btn}`
+
   return (
-      <button onClick={onClick}  className={styles.btn}>
+      <button onClick={onClick} className={buttonClass}>
 {label}
     </button>
    

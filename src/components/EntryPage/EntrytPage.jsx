@@ -5,6 +5,7 @@ import Button from '../Button/Button';
 
 const EntrytPage = ({gameStart}) => {
   return (
+    < div className={styles.main}>
     <div className={styles.container}>
       <div className={styles.entry}>
         <img className={styles.img} src="images/coverpic..jpeg" alt="entry" />
@@ -15,6 +16,7 @@ const EntrytPage = ({gameStart}) => {
     <Button onClick={gameStart} label="Play Now"   /> 
 </div>
 
+    </div>
     </div>
   )
 }
