@@ -1,0 +1,10 @@
+.dice{
+    margin-left: 35%;
+    cursor: pointer;
+}
+
+p{
+    margin-left: 38%;
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -25,7 +25,14 @@
 }
 
 .para{
+    margin:0 0 0 30px;
+    padding: 0;
+    font-size: 40px;
+}
+
+.left{
     margin: 0;
+    font-size: 20px;
 }
 
 
