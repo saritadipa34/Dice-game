@@ -1,28 +1,61 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './gamePage.module.css';
 import Box from '../Box/Box'
 import Dice from '../Dice/Dice';
 import Button from '../Button/Button';
+import Instruction from '../Instruction/Instruction';
 
 const GamePage = () => {
-  return (
-    <>   <div className={styles.main}>
+  const [score,setScore]=useState(0);
+  const[bgclr,setBgclr]=useState();
+  const[diceNum,setDiceNum]=useState(1);
+  const[error,setError]=useState();
 
-<div className={styles.head}>
+  const numGenerator=(min, max)=>{
+    console.log(Math.floor(Math.random() * (max - min) + min))
+    return Math.floor(Math.random() * (max - min) + min);
+  
+    }
+
+    const roleDice=()=>{
+    if(!bgclr) {
+      setError("You have not selected any Number")
+      return;
+    }
+    setError("");
+
+const randomNum=numGenerator(1,7);
+setDiceNum(randomNum);
+  
+
+if(bgclr === randomNum){
+  setScore((prev)=> prev + randomNum)
+} else{
+  setScore((prev)=> prev -2)
+}
+setBgclr(undefined)     //('')
+}
+
+  return (
+    <>
+    <div className={styles.main}>
+  <div className={styles.head}>
   <div className={styles.num}>
-<h1 className={styles.para}>0</h1>
+<h1 className={styles.para}>{score}</h1>
 <p className={styles.left}>Total Score</p>
 </div>
 
 <div >
-  <Box />
-  <p>Select Number</p>
+  <p className={styles.error}>{error}</p>
+  <Box  bgclr={bgclr} setBgclr={setBgclr} error={error}/>
+  <p className={styles.select}>Select Number</p>
 </div>
 </div>
 
-<Dice />
+<Dice diceNum={diceNum} roleDice={roleDice} />
 <Button label="Reset Scores" className="reset" type="reset"/>
 <Button label="Show Rules" type="button" className="rules" />
+<Instruction />
    </div>
    </>
 

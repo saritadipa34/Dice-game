@@ -1,0 +1,18 @@
+.Instruction {
+    border: 2px solid rgb(132, 175, 223);
+}
+
+.Instruction h1{
+    font-size: 18px;
+    margin-top:0;
+    font-weight: 900;
+    border: 1px solid rgb(132, 175, 223);
+text-align: center;
+
+}
+
+ p{
+
+    font-size: small;
+color: rgb(49, 41, 41);
+ }

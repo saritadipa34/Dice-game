@@ -13,4 +13,8 @@ border: 1px solid black;
 cursor: pointer;
 }
 
+.error{
+    color: red;
+}
+
 

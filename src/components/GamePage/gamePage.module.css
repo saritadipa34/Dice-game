@@ -30,9 +30,18 @@
     font-size: 40px;
 }
 
-.left{
-    margin: 0;
-    font-size: 20px;
+.error{
+    color: red;
+    font-size: 18px;
+    margin-left:80px
 }
 
+.select{
+    font-size: 15px;
+}
 
+.left{
+    margin:0;
+    font-size: 20px;
+
+}
