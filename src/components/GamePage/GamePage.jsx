@@ -6,10 +6,12 @@ import Button from '../Button/Button';
 import Instruction from '../Instruction/Instruction';
 
 const GamePage = () => {
+
   const [score,setScore]=useState(0);
   const[bgclr,setBgclr]=useState();
   const[diceNum,setDiceNum]=useState(1);
   const[error,setError]=useState();
+  const[rules,setRules]=useState(false);
 
   const numGenerator=(min, max)=>{
     console.log(Math.floor(Math.random() * (max - min) + min))
@@ -26,14 +28,21 @@ const GamePage = () => {
 
 const randomNum=numGenerator(1,7);
 setDiceNum(randomNum);
-  
 
 if(bgclr === randomNum){
   setScore((prev)=> prev + randomNum)
 } else{
   setScore((prev)=> prev -2)
 }
-setBgclr(undefined)     //('')
+setBgclr(undefined)     
+}
+
+const resetBtn=()=>{
+  setScore(0)
+}
+
+const showRules=()=>{
+setRules(!rules)
 }
 
   return (
@@ -53,9 +62,11 @@ setBgclr(undefined)     //('')
 </div>
 
 <Dice diceNum={diceNum} roleDice={roleDice} />
-<Button label="Reset Scores" className="reset" type="reset"/>
-<Button label="Show Rules" type="button" className="rules" />
-<Instruction />
+<Button label="Reset Scores" onClick={resetBtn} className="reset" type="reset"/>
+
+< Button label={rules ? "Hide Rules" : "Show Rules"} onClick={showRules} type="button" className="rules" /> 
+
+{rules && <Instruction />}
    </div>
    </>
 

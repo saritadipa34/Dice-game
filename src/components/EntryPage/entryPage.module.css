@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .container{
@@ -11,6 +12,8 @@
     justify-content: space-between;
     height: 70vh;
     width: 70vw;
+    margin-left: 100px;
+    
 }
 
 .entry{
@@ -32,3 +35,4 @@ h1{
 .h1{
     padding: 100px 50px;
 }
+

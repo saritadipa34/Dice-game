@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+
 import styles from "./box.module.css";
 
 const Box = ({bgclr,setBgclr}) => {

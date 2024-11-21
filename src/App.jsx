@@ -5,7 +5,7 @@ import GamePage from './components/GamePage/GamePage';
 
 
 function App() {
-const[entry,setEntry]=useState(false)
+const[entry,setEntry]=useState(true)
 
 const gameStart=()=>{
 setEntry(!entry)
@@ -13,7 +13,7 @@ setEntry(!entry)
 
   return (
     <>
-    {entry ? (<EntrytPage gameStart={gameStart}/>) : (<GamePage  />)}
+    {entry ? (<EntrytPage gameStart={gameStart}/>) : (<GamePage  />) }
     </>
   )
 }

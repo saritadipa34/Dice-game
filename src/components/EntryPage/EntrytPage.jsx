@@ -13,7 +13,7 @@ const EntrytPage = ({gameStart}) => {
 
 <div className={styles.h1}>
     <h1>DICE GAME</h1>
-    <Button onClick={gameStart} label="Play Now"   /> 
+    <Button onClick={gameStart}  label="Play Now" /> 
 </div>
 
     </div>

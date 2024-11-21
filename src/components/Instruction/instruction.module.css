@@ -1,12 +1,12 @@
 .Instruction {
-    border: 2px solid rgb(132, 175, 223);
+    border: 2px solid black;
 }
 
 .Instruction h1{
     font-size: 18px;
     margin-top:0;
     font-weight: 900;
-    border: 1px solid rgb(132, 175, 223);
+    border: 1px solid black;
 text-align: center;
 
 }
