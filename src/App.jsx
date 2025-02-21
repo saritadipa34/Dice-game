@@ -1,8 +1,12 @@
+import Entrypage from "./components/Entrypage";
+// import Gamingpage from "./components/Gamingpage";
 
-const App=()=>{
+const App=()=>{ 
   return(
-    <div className="bg-blue-400">
-      app
+    <div>
+      
+      <Entrypage />
+
     </div>
   )
 }
