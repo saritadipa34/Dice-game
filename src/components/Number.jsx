@@ -4,8 +4,8 @@ const Number=()=>{
     const nums=[1,2,3,4,5,6]
 
 const handleClick=()=>{
-    const ans= nums[Math.floor(Math.random() * nums.length)]
-    console.log("click",ans)
+    const res= nums[Math.floor(Math.random() * nums.length)]
+    console.log(res)
 }
 
     return(

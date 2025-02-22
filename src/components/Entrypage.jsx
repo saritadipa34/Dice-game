@@ -3,7 +3,7 @@ import Button from "./Button";
 import { useState } from "react";
 
 const Entrypage=()=>{
-const [page,setPage]=useState(false)
+const [page,setPage]=useState(true)
     
     const handleButton=()=>{
         setPage(true)
@@ -16,7 +16,7 @@ const [page,setPage]=useState(false)
             <img className="h-[350px] w-[550px]" src="/images/dicecover.jpeg" alt="entry" />
             <div>
                 <h1 className="text-7xl mt-20 mb-5 font-bold  ">DICE GAME</h1>
-                <Button style={{marginLeft:"230px"}}  onClick={handleButton}/>
+                <Button texts={"Play Now"} style={{marginLeft:"230px"}}  onClick={handleButton}/>
             </div>
         </div>
     )
